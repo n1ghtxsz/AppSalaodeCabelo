@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose-950: #3a0020;
+  --color-rose-900: #5a0630;
+  --color-rose-800: #8b0847;
+  --color-rose-700: #b01050;
+  --color-rose-600: #c91f68;
+  --color-rose-500: #e0399c;
+  --color-rose-400: #f06cba;
+  --color-rose-300: #f9a8d4;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Poppins", "Inter", system-ui, sans-serif;
+
+  --radius-pill: 9999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-rose-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
